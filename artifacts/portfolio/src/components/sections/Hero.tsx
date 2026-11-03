@@ -17,7 +17,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative flex items-center md:min-h-[100svh] pt-24 pb-12 sm:pt-28 md:pb-20 lg:pt-24 lg:pb-14 2xl:pt-28 2xl:pb-20 overflow-x-clip">
+    <section className="relative flex items-center md:min-h-[100svh] pt-24 pb-12 sm:pt-28 md:pb-20 lg:pt-24 lg:pb-14 2xl:pt-24 2xl:pb-14 2xl:[@media(min-height:900px)]:pt-28 2xl:[@media(min-height:900px)]:pb-20 overflow-x-clip">
       {/* Background: soft grid + brand glow */}
       <div className="absolute inset-0 z-0 pointer-events-none" aria-hidden="true">
         <div className="hero-grid absolute inset-0" />
@@ -43,13 +43,13 @@ export function Hero() {
 
             <motion.h1
               {...fadeUp(0.16)}
-              className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-5xl xl:text-[3.5rem] min-[1440px]:text-[4.25rem] 2xl:text-[5rem] font-serif font-medium leading-[1.05] tracking-tight mb-5 lg:mb-4 2xl:mb-6"
+              className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-5xl xl:text-[3.5rem] min-[1440px]:text-[4.25rem] 2xl:text-[3.75rem] 2xl:[@media(min-height:900px)]:text-[5rem] font-serif font-medium leading-[1.05] tracking-tight mb-5 lg:mb-4 2xl:mb-6"
             >
               Designing{" "}
               <span className="text-primary">scalable UX</span> for complex products.
             </motion.h1>
 
-            <motion.p {...fadeUp(0.24)} className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed max-w-lg 2xl:max-w-xl 2xl:text-2xl mb-6 lg:text-lg xl:text-lg min-[1440px]:text-xl">
+            <motion.p {...fadeUp(0.24)} className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed max-w-lg 2xl:max-w-xl 2xl:text-xl 2xl:[@media(min-height:900px)]:text-2xl mb-6 lg:text-lg xl:text-lg min-[1440px]:text-xl">
               Senior UX designer with 5+ years in data-heavy enterprise SaaS — turning multi-step workflows,
               dashboards and role-based products into clear, accessible experiences, now exploring AI-assisted workflows.
             </motion.p>
